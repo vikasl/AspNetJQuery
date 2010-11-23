@@ -1,0 +1,20 @@
+K 10
+svn:ignore
+V 164
+bin
+obj
+*.log
+*.cache
+*.user
+*.suo
+_ReSharper.*
+TestResult.xml
+Coverage.Log
+Coverage.Xml
+Coverage.html
+Coverage-summary.html
+*.pdb
+*.vshost.exe
+*.vshost.exe.config
+
+END
