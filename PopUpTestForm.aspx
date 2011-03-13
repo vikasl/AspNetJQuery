@@ -10,6 +10,20 @@
 <head runat="server">
     <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
     <title></title>
+    <script src="javascript/jQuery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="javascript/jQuery/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+<script src="javascript/jQuery/jquery.json.js" type="text/javascript"></script>
+    <script src="javascript/TestScript.js" type="text/javascript"></script>
+    <script src="javascript/jQuery/jquery.tmpl.js" type="text/javascript"></script>
+
+            <script id="productTemplate" type="text/x-jquery-tmpl">
+            <div>
+                <div style="font-weight: bold">
+                    ProductId: ${ProductId}
+                </div>
+
+            </div>
+        </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -18,25 +32,11 @@
     <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LinkButton</asp:LinkButton>
     <div>
     </div>
-
-
-    
+    <div id="productContainer" runat="server">
+    </div>
+  
     <ppc:testPopUp ID="myTestPopUp" runat="server" />
 
-    <%--    <asp:Button runat="server" ID="hiddenTargetControlForModalPopup" Style="display: none" />
-    <ajaxtoolkit:modalpopupextender id="webPayEntryPopupExtender" runat="server" targetcontrolid="hiddenTargetControlForModalPopup"
-        popupcontrolid="pnlDetail" behaviorid="detailPopupBehavior" backgroundcssclass="modalBackground"
-        dropshadow="true" popupdraghandlecontrolid="pnlDetailHandle" repositionmode="None" />
-    <asp:Panel ID="pnlDetail" runat="server" Style="display: none;" CssClass="modalPopup">
-        <asp:Panel ID="pnlDetailHandle" runat="server" CssClass="modalHandle">
-            <asp:UpdatePanel ID="upDetail" runat="server" UpdateMode="Conditional">
-                <ContentTemplate>
-                    <input type="hidden" id="detailType" runat="server" />
-                    hello
-                </ContentTemplate>
-            </asp:UpdatePanel>
-        </asp:Panel>
-    </asp:Panel>--%>
     </form>
 </body>
 </html>

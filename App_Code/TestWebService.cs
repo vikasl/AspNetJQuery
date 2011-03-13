@@ -38,6 +38,36 @@ public class TestWebService : System.Web.Services.WebService {
                                            new Details {DetailId = 11}, 
                                            new Details {DetailId = 22}
                                        }
+                           },
+                           new Product
+                           {
+                               ProductId = 2,
+                               ProductDetails =
+                                   new List<Details>
+                                       {
+                                           new Details {DetailId = 33}, 
+                                           new Details {DetailId = 44}
+                                       }
+                           },
+                            new Product
+                           {
+                               ProductId = 3,
+                               ProductDetails =
+                                   new List<Details>
+                                       {
+                                           new Details {DetailId = 55}, 
+                                           new Details {DetailId = 66}
+                                       }
+                           },
+                           new Product
+                           {
+                               ProductId = 4,
+                               ProductDetails =
+                                   new List<Details>
+                                       {
+                                           new Details {DetailId = 77}, 
+                                           new Details {DetailId = 88}
+                                       }
                            }
                    };
 

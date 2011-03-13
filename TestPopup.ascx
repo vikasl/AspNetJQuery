@@ -1,6 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="TestPopup.ascx.cs" Inherits="TestPopup" %>
 
 <%@ Register TagPrefix="ajaxToolkit" Assembly="AjaxControlToolKit" Namespace="AjaxControlToolkit" %>
+
+
     <asp:Button runat="server" ID="hiddenTargetControlForSpinnerModalPopup" Style="display: none" />
     <ajaxToolkit:ModalPopupExtender ID="SpinnerPopupExtender" runat="server" TargetControlID="hiddenTargetControlForSpinnerModalPopup"
         PopupControlID="pnlSpinner" BehaviorID="spinnerPopupBehavior" BackgroundCssClass="modalBackground"
@@ -16,6 +18,8 @@
                         background-repeat: no-repeat; background-position: center; background-color: #FFFFFF;
                         z-index: 99999; height: 32px; width: 100%;">
                     </div>
+                        <asp:TextBox ID="txtValue" runat="server"></asp:TextBox>
+                        <asp:ListBox ID="lbChoices" runat="server"></asp:ListBox>
                     </div>
 
                 </ContentTemplate>
